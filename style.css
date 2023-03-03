@@ -1,0 +1,286 @@
+:root {
+  --black: #1D1C1C;
+  --dark-gray: #917D6E;
+  --medium-gray: #F6F2EF;
+  --white: #FFFFFF;
+  --pink: #FF5678;
+  --header-top-padding: 10px;
+}
+
+h1, h2 {
+ font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p, a {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* Add styles here */
+
+
+
+/* Header */
+
+header {
+  padding-top: var(--header-top-padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header img {
+  flex: 0 1 auto;
+}
+
+nav {
+ 
+  flex: 0 1 auto;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--black);
+  margin: 1rem;
+}
+
+nav button {
+  margin-left: 0.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  height: 1.5rem;
+  width: 6rem;
+  padding: 0 1.5rem;
+  color: var(--white);
+  background-color: var(--pink);
+  font-family: nunito;
+}
+
+/* Banner */
+
+banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 4rem 0;
+  width: auto;
+}
+
+.title {
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title h1 {
+  flex: 0 1 auto;
+  line-height: 6.25rem;
+  font-size: 5.5rem;
+  font-weight: 800;
+}
+
+.title p {
+  flex: 0 1 auto;
+  font-size: 2.5rem;
+  line-height: 3.41rem;
+}
+
+.search {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.search input {
+  flex: 0 1 23.5rem;
+  margin-right: 0.5rem;
+  padding-left: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--medium-gray);
+  height: 4rem;
+}
+
+.search button {
+  flex: 0 1 auto;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 2.5rem;
+  border: none;
+  background-color: var(--pink);
+  color: var(--white);
+  font-size: 2rem;
+}
+
+banner img {
+  flex: 0 2 42.47875rem;
+  height: 34.04375rem;
+}
+
+/* Main */
+
+/* About */
+
+.about {
+  border-top: 2px solid var(--black);
+  border-bottom: 2px solid var(--black);
+  padding: 4rem 0;
+}
+
+.about h2 {
+  font-weight: 800;
+}
+
+.about a {
+  color: var(--pink);
+}
+
+/* Special Offers */
+
+.special-offers {
+  
+}
+
+.special-offers h2 {
+  font-weight: 800;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.offers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.offer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 23.3125rem;
+  height: 25.6875rem;
+  border-radius: 1rem;
+  background-color: var(--medium-gray);
+  margin-bottom: 1rem;
+}
+
+.offer-card img {
+  border-radius: 1rem;
+  width: 18.3125rem;
+  height: 12.5rem;
+  margin: 1.5rem;
+}
+
+.offer-card p {
+  font-weight: 800;
+}
+
+.offer-card button {
+  border: none;
+  border-radius: 1.5rem;
+  height: 2rem;
+  width: 6rem;
+  padding: 0 1.5rem;
+  color: var(--white);
+  background-color: var(--pink);
+  margin: 1.5rem;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--white);
+  height: 12.5rem;
+}
+
+.social-nav img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.facebook img {
+  background-color: var(--white);
+  border-radius: 1rem;
+}
+
+/* Media Queries */
+ 
+@media only screen and (max-width: 1279px) {
+  body {
+    margin: 2.25rem 2.5rem;
+  }
+  
+  banner img {
+    width: 30rem;
+    height: 22rem;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  body {
+    margin: 2.25rem 2.5rem;
+  }
+  
+  banner img {
+    width: 16.53rem;
+    height: 13.2668rem;
+  }
+
+  .offer-card {
+    width: 22.8125rem;
+  }
+
+  .offer-card img {
+    width: 17.8125rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .title h1 {
+    font-size: 2.75rem;
+    line-height: 3.125rem;
+  }
+
+  .title p {
+    font-size: 1.25rem;
+    line-height: 1.705rem;
+  }
+
+  .search input {
+    width: 12rem;
+  }
+}

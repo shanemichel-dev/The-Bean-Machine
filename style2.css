@@ -1,0 +1,139 @@
+:root {
+  --black: #1D1C1C;
+  --dark-gray: #917D6E;
+  --medium-gray: #F6F2EF;
+  --white: #FFFFFF;
+  --pink: #FF5678;
+  --green: #149770;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Main */
+
+/* Title Banner */
+
+.title-banner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.title-banner h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+}
+
+.sort p {
+  margin: 1rem;
+}
+
+.sorter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10rem;
+  height: 3rem;
+  background-color: var(--medium-gray);
+  border-radius: 1.5rem;
+  font-size: 1rem;
+}
+
+/* Selections */
+
+.selections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.selection-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--medium-gray);
+  width: 23.3125rem;
+  height: 27.875rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
+  font-size: 1.25rem;
+  padding: 1rem 0;
+}
+
+.selection-card .status {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 256px;
+  top: 20px;
+  width: 7.3125rem;
+  height: 2.5rem;
+  background-color: var(--green);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
+  border-radius: 2rem 0 0 2rem;
+  padding-left: 1.5rem;
+}
+
+.selection-card img {
+  border-radius: 1rem;
+  width: 18.3125rem;
+  height: 12.5rem;
+}
+
+.product-title-price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 18.3125rem;
+}
+
+.product-title, .price {
+  font-weight: 700;
+  line-height: 1.6875rem;
+}
+
+.selection-card .origin {
+  width: 18.3125rem;
+  text-align: left;
+  line-height: 2rem;
+}
+
+.selection-card button {
+  width: 9.8125rem;
+  height: 3rem;
+  background-color: var(--pink);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 1.5rem;
+  border: none;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 834px) {
+  body {
+    margin: 2.25rem 2.5rem;
+  }
+
+  .selection-card {
+    width: 21.8125rem;
+  }
+
+  .selection-card img {
+    width: 17.3125rem;
+  }
+}
