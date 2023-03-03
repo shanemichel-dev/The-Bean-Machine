@@ -273,4 +273,9 @@ footer {
   .search input {
     width: 12rem;
   }
+
+  banner img {
+    width: 75%;
+    height: 75%;
+  }
 }
