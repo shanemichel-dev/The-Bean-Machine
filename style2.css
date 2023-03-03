@@ -7,8 +7,8 @@
   --green: #149770;
 }
 
-* {
-  box-sizing: border-box;
+body {
+  margin: 2.25rem 2.5rem;
 }
 
 /* Main */
@@ -120,20 +120,4 @@
   font-weight: 700;
   border-radius: 1.5rem;
   border: none;
-}
-
-/* Media Queries */
-
-@media only screen and (max-width: 834px) {
-  body {
-    margin: 2.25rem 2.5rem;
-  }
-
-  .selection-card {
-    width: 21.8125rem;
-  }
-
-  .selection-card img {
-    width: 17.3125rem;
-  }
 }
