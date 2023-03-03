@@ -32,11 +32,14 @@ p {
   font-size: 16px;
 }
 
-html,
-body {
+html {
   margin: 0;
   padding: 0;
   font-size: 16px;
+}
+
+body {
+  margin: 2.25rem 2.5rem;
 }
 
 /* Header */
@@ -243,13 +246,8 @@ footer {
 }
 
 @media only screen and (max-width: 834px) {
-  body {
-    margin: 2.25rem 2.5rem;
-  }
-  
-  banner img {
-    width: 16.53rem;
-    height: 13.2668rem;
+  banner {
+    flex-wrap: wrap;
   }
 
   .offer-card {
